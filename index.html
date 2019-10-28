@@ -1,0 +1,79 @@
+<html>
+
+<head>
+	<title>Form Seating</title>
+	<meta charset="UTF-8" />
+	<base href="/">
+</head>
+
+<body>
+	<div class="app-wrapper">
+		<ul class="menu">
+			<li>Главная</li>
+			<li>Списки</li>
+			<li>Загрузка начальных данных</li>
+		</ul>
+		<div class="form-wrapper">
+			<form class="filter">
+				<div id="search" class="search-wrapper wrapper">
+					<label>Поиск</label>
+					<input class="search" placeholder="Введите Фамилию">
+				</div>
+				<div id="building-select" class="building-wrapper wrapper">
+					<label>Корпус</label>
+					<select class="building">
+						<option>Выберите корпус</option>
+					</select>
+				</div>
+				<div id="profile-select" class="profile-wrapper wrapper">
+					<label>Профиль</label>
+					<select class="profile">
+						<option>Выберите профиль</option>
+					</select>
+				</div>
+				<div id="audience-select" class="audience-wrapper wrapper">
+					<label>Аудитория</label>
+					<select class="audience">
+						<option>Выберите аудиторию</option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="table-wrapper">
+			<div class="all-students">
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th class="sort-name">ФИО</th>
+							<th class="sort-audience">Каб.</th>
+							<th class="sort-profile">Профиль</th>
+							<th class="sort-bel">Бел</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+			<div class="seated-students">
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Количество</th>
+							<th>Max</th>
+							<th>Бел</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<script src="./src/index.js"></script>
+</body>
+
+</html>

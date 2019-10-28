@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app-wrapper {
+  min-width: 450px;
+  height: auto;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #F8F9FA;
+
+  .menu {
+    list-style: none;
+    color: rgba(0,0,0,.5);
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+    li {
+      padding: 5px;
+    }
+
+    li:hover {
+      color: rgba(0,0,0,.9);
+    }
+  }
+
+  .filter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 16.5px;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      input, select {
+        padding: 5px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+        color: rgba(0,0,0,.7);
+      }
+
+      input {
+        height: 29px;
+      }
+
+      label {
+        padding-bottom: 10px;
+      }
+    }
+  }
+
+  .table-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 16.5px;
+    grid-gap: 15px;
+
+    .all-students, .seated-students {
+      border-top: 1px solid #dee2e6;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    table {
+      background-color: #FFFFFF;
+      width: -webkit-fill-available;
+      border-collapse: collapse;
+
+      thead {
+        
+        th {
+          padding: 10px;
+          text-align: left;
+          font-size: 15px;
+        }
+
+        .sort-name, .sort-audience, .sort-profile, .sort-bel {
+          cursor: pointer;
+        }
+      }
+
+      tbody {
+        tr {
+
+          td {
+            padding: 10px;
+            text-align: left;
+            // white-space: nowrap;
+            color: #212529;
+            font-size: 15px;
+          }
+
+          td:last-child {
+            padding: 0;
+          }
+
+          .bold {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .seated-students table {
+      position: sticky;
+      top: 165px;
+    }
+  }
+
+  .all-students tbody tr {
+    cursor: move;
+  }
+}
+
+.flag {
+  background: repeating-linear-gradient( 180deg, #ffffff, #ffffff 6px, #ed0909 0px, #ff0000 16px );
+  width: 36px;
+  height: 22px;
+  border: 1px solid;
+}
+
+.table-danger {
+  background-color: #f5c6cb;
+}
+
+.row-hower:hover {
+  background-color: #ECECEC;
+}
+
+.row-hower-danger:hover {
+  background-color: #F1B0B7;
+}
+
+.fake-row {
+  position: absolute;
+  display: flex;
+  background-color: white;
+  z-index: 1000;
+  padding: 10px;
+  border: 1px solid black;
+  width: 600px;
+  height: 16px;
+
+  .fake-row-item {
+    padding: 0 10px;
+  }
+}
